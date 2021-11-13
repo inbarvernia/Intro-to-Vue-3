@@ -14,10 +14,15 @@ const app = Vue.createApp({
     },
     methods: {
         addToCart() {
-        this.cart += 1;
-      },
+          this.cart += 1;
+        },
         updateImage(newImage) {
           this.image = newImage;
+        },
+        removeFromCart() {
+          if (this.cart > 0) {
+            this.cart -= 1;
+          }
         }
     }
 })
