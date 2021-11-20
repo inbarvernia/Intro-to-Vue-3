@@ -1,4 +1,5 @@
 const app = Vue.createApp({
+
     data() {
         return {
             cart:0,
@@ -23,6 +24,7 @@ const app = Vue.createApp({
           if (this.cart > 0) {
             this.cart -= 1;
           }
+
         }
     }
 })
