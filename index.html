@@ -19,6 +19,7 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
             <ul>
@@ -32,6 +33,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- Import App -->
@@ -39,7 +41,7 @@
 
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('#app')
+      const mountedApp = app.mount('#app');
     </script>
   </body>
 </html>
